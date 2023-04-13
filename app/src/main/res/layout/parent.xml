@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/layput"
+    android:padding="10dp"
+    android:layout_marginVertical="10dp">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingHorizontal="10dp"-->
+<!--        android:paddingVertical="5dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/dateParent"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="0"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="18sp"-->
+<!--            android:text="date"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            tools:ignore="HardcodedText,NestedWeights" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/dayParent"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="0"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/textColor"-->
+<!--            android:textSize="12sp"-->
+<!--            android:text="day"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:background="#5A000000"-->
+<!--            tools:ignore="HardcodedText" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/month_yearParent"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_weight="0"-->
+<!--            android:textSize="12sp"-->
+<!--            android:gravity="start"-->
+<!--            android:text="day_month"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textColor="@color/gray"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:ignore="HardcodedText" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/incomeParent"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="right"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="income"-->
+<!--            tools:ignore="HardcodedText,RtlHardcoded" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/expenseParent"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="right"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="expense"-->
+<!--            tools:ignore="HardcodedText,RtlHardcoded" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recyclerViewParent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/dateAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:text="date"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/dayAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:text="day"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/month_yearAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:text="month_year"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/incomeAdapter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:text="income"
+            android:gravity="right"
+            android:textColor="#B83562"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/categoryAdapter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="category"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noteAdapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="note"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText,NestedWeights" />
+
+            <TextView
+                android:id="@+id/accountAdapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="account"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/amountAdapter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="amount"
+            android:layout_marginStart="5dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>
